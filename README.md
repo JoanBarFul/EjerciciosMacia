@@ -8,4 +8,4 @@
 ## ACTIVIDAD 2: DRAG AND DROP
   La actividad dos es una pantalla donde hay una canasta y una pelota de basquet. El usuario puede coger y arrastrar la pelota. En el momento en que el usuario la suelta la pelota cae hacia el suelo.   
   Cosas a tener  en cuenta son que la pelota no puede salir de los bordes de la pantalla, y que una vez suletas la pelota la puedes coger mientras cae y se paran las físicas.  
-  [Video Actividad 2](https://youtu.be/7SgWgqtHA1k)
+  [Video Actividad 2](https://youtu.be/ruOnswedZwY)
