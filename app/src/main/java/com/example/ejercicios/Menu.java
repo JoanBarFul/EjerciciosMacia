@@ -17,6 +17,7 @@ public class Menu extends AppCompatActivity {
         // Acceso a los botones
         Button button1 = findViewById(R.id.button1);
         Button button2 = findViewById(R.id.button2);
+        Button button3 = findViewById(R.id.button3);
 
 
         // Acciones de los botones
@@ -37,6 +38,13 @@ public class Menu extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-}
+        button3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Inicia la nueva actividad con un Intent
+                Intent intent = new Intent(Menu.this, Quiz.class);
+                startActivity(intent);
+            }
+        });
+    }
 }

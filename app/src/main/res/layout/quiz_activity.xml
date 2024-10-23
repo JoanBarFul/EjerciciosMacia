@@ -1,0 +1,122 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="351dp"
+        android:layout_height="169dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="34dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textQuestions"
+            android:layout_width="73dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="105dp"
+            android:layout_marginBottom="123dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/textCorrects"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textCorrects"
+            android:layout_width="99dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="220dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="123dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textIncorrects"
+            android:layout_width="99dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="220dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="81dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textCorrects" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="321dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginEnd="45dp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.36" />
+
+    <Button
+        android:id="@+id/buttonTrue"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="14dp"
+        android:background="@android:drawable/bottom_bar"
+        android:text="True"
+        app:layout_constraintBottom_toTopOf="@+id/buttonNext"
+        app:layout_constraintEnd_toStartOf="@+id/buttonFalse"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/buttonFalse"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="17dp"
+        android:background="@android:drawable/bottom_bar"
+        android:text="False"
+        app:layout_constraintBottom_toTopOf="@+id/buttonNext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonTrue"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/buttonNext"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginEnd="131dp"
+        android:layout_marginBottom="273dp"
+        android:background="@android:drawable/bottom_bar"
+        android:text="Next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
