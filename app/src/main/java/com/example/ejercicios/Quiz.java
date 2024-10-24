@@ -159,4 +159,5 @@ public class Quiz extends AppCompatActivity {
         outState.putBoolean("finished", finished);
         outState.putSerializable("answeredQuestions", answeredQuestions);  // Guardar el estado de las respuestas
     }
+    //
 }
