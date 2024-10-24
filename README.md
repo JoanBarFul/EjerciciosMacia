@@ -17,7 +17,8 @@ https://github.com/user-attachments/assets/29ac9912-c928-4c47-8184-83a0ebb2bd0f
   La actividad es una pantalla con un quiz con de seis preguntas. En pantalla se muestra unas frases a las que puedes responder veradadero o falso con unos botones. Al contestar la pregunta los botones se bloquean    y se suma al contador de correctas o incorrectas dependiendo de tu respuesta. La aplicación tiene también dos botones para avanzar y retroceder por las preguntas y un texto que te indica en que pregunta estas.  
   Al girar la orientación del dispositivo los elementos en pantalla se colocan debidamente.
   
-https://github.com/user-attachments/assets/329addfa-995d-4c23-90f1-8481541de066
+[quiz.webm](https://github.com/user-attachments/assets/65081b44-4858-492b-8b0e-eff68181d1d6)
+
 
   
 
