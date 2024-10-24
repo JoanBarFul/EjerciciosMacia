@@ -18,7 +18,7 @@ public class Quiz extends AppCompatActivity {
     private Iterator<String> questionIterator;
     private String currentQuestion;
     private TextView questionTextView, textQuestions, textCorrects, textIncorrects;
-    private Button trueButton, falseButton, nextButton;
+    private Button trueButton, falseButton, nextButton, prevButton;
     private int corrects = 0;
     private int incorrects = 0;
     private int actualQuestion = 1;
@@ -33,6 +33,7 @@ public class Quiz extends AppCompatActivity {
         trueButton = findViewById(R.id.buttonTrue);
         falseButton = findViewById(R.id.buttonFalse);
         nextButton = findViewById(R.id.buttonNext);
+        prevButton = findViewById(R.id.buttonPrev);
         textQuestions = findViewById(R.id.textQuestions);
         textCorrects = findViewById(R.id.textCorrects);
         textIncorrects = findViewById(R.id.textIncorrects);
@@ -41,47 +42,58 @@ public class Quiz extends AppCompatActivity {
         quizData = new HashMap<>();
         initializeQuiz();
 
-        // Obtener el iterador de preguntas
-        questionIterator = quizData.keySet().iterator();
+        // Restaurar el estado si lo hay
+        if (savedInstanceState != null) {
+            // Restaura los valores previos
+            corrects = savedInstanceState.getInt("corrects");
+            incorrects = savedInstanceState.getInt("incorrects");
+            actualQuestion = savedInstanceState.getInt("actualQuestion");
+            finished = savedInstanceState.getBoolean("finished");
 
-        // Mostrar la primera pregunta
-        if (questionIterator.hasNext()) {
-            currentQuestion = questionIterator.next();
-            questionTextView.setText(currentQuestion);
+            // Restaura el iterador al estado correcto
+            questionIterator = quizData.keySet().iterator();
+            for (int i = 0; i < actualQuestion; i++) {
+                currentQuestion = questionIterator.next();
+            }
+        } else {
+            // Obtener el iterador de preguntas
+            questionIterator = quizData.keySet().iterator();
+            if (questionIterator.hasNext()) {
+                currentQuestion = questionIterator.next();
+            }
         }
 
+        // Mostrar la primera pregunta o restaurar la actual
+        questionTextView.setText(currentQuestion);
+        updateUI();
+
         // Manejar el botón de Verdadero
-        trueButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (!finished) {
-                    checkAnswer(true);
-                }
+        trueButton.setOnClickListener(v -> {
+            if (!finished) {
+                checkAnswer(true);
             }
         });
 
         // Manejar el botón de Falso
-        falseButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (!finished) {
-                    checkAnswer(false);
-                }
+        falseButton.setOnClickListener(v -> {
+            if (!finished) {
+                checkAnswer(false);
             }
         });
 
         // Manejar el botón de Next
-        nextButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (!finished) {
-                    nextAnswer();
-                }
+        nextButton.setOnClickListener(v -> {
+            if (!finished) {
+                nextAnswer();
             }
         });
 
-        // Inicializar el texto de la primera pregunta
-        updateUI();
+        // Manejar el botón de Prev (Pregunta anterior)
+        prevButton.setOnClickListener(v -> {
+            if (actualQuestion > 1) {
+                previousAnswer();
+            }
+        });
     }
 
     // Método para inicializar el quiz con preguntas y respuestas
@@ -104,7 +116,6 @@ public class Quiz extends AppCompatActivity {
                 Toast.makeText(this, "¡Correcto!", Toast.LENGTH_SHORT).show();
                 corrects++;
             }
-
         } else {
             if (!finished) {
                 Toast.makeText(this, "Incorrecto", Toast.LENGTH_SHORT).show();
@@ -112,7 +123,10 @@ public class Quiz extends AppCompatActivity {
             }
         }
 
-        nextAnswer(); // Llamar a nextAnswer después de verificar la respuesta
+        // Bloquear los botones después de responder
+        trueButton.setEnabled(false);
+        falseButton.setEnabled(false);
+        updateUI();
     }
 
     // Método para mostrar la siguiente pregunta si la hay
@@ -120,12 +134,27 @@ public class Quiz extends AppCompatActivity {
         if (questionIterator.hasNext()) {
             currentQuestion = questionIterator.next();
             actualQuestion++;
+            trueButton.setEnabled(true);  // Habilitar los botones para la siguiente pregunta
+            falseButton.setEnabled(true);
         } else {
             finished = true;
             Toast.makeText(this, "¡Has terminado el quiz!", Toast.LENGTH_SHORT).show();
         }
+        updateUI();
+    }
 
-        updateUI(); // Actualizar la interfaz
+    // Método para ir a la pregunta anterior
+    private void previousAnswer() {
+        // Reiniciar el iterador y avanzar hasta la pregunta anterior
+        questionIterator = quizData.keySet().iterator();
+        for (int i = 0; i < actualQuestion - 1; i++) {
+            currentQuestion = questionIterator.next();
+        }
+        actualQuestion--;
+        trueButton.setEnabled(false);  // Deshabilitar los botones para que no se pueda responder
+        falseButton.setEnabled(false);
+
+        updateUI();
     }
 
     // Método para actualizar el texto en la interfaz
@@ -134,5 +163,15 @@ public class Quiz extends AppCompatActivity {
         textQuestions.setText(actualQuestion + " / 6");
         textCorrects.setText("Correctas: " + corrects);
         textIncorrects.setText("Incorrectas: " + incorrects);
+    }
+
+    // Guardar el estado actual de la actividad antes de que sea destruida por la rotación
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putInt("corrects", corrects);
+        outState.putInt("incorrects", incorrects);
+        outState.putInt("actualQuestion", actualQuestion);
+        outState.putBoolean("finished", finished);
     }
 }
