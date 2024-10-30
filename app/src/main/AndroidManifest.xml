@@ -18,6 +18,8 @@
             android:name=".MainActivity"
             android:exported="true">
         </activity>
+        <activity android:name=".Fragments"
+            android:exported="true"/>
         <activity
             android:name=".Quiz"
             android:exported="true">
