@@ -20,6 +20,10 @@ https://github.com/user-attachments/assets/29ac9912-c928-4c47-8184-83a0ebb2bd0f
   
 https://github.com/user-attachments/assets/ffc45460-8783-41c6-8ad4-abee48118404
 
+## ACTIVIDAD 4: FRAGMENTS
+  En la actividad 4 se crean dos fragments y mediante una actividad que hace de contrloador se muestran los dos fragments. En la vista vertical se muestra un fragment y dos botones, con los botones puedes cambiar entre los dos fragments. En cambio enla vista horizontal se muestran los dos fragments a la vez.
+
+https://github.com/user-attachments/assets/e5b703c4-7458-4cbc-a7fa-87dc94806d1c
 
 
 
