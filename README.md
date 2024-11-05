@@ -25,6 +25,15 @@ https://github.com/user-attachments/assets/ffc45460-8783-41c6-8ad4-abee48118404
 
 https://github.com/user-attachments/assets/e5b703c4-7458-4cbc-a7fa-87dc94806d1c
 
+## ACTIVIDAD 5: HELLO TOAST
+  En la actividad 5, hello toast, he usado un LinearLayout para poner dos botones y un texto. Al pulsar el primer botón se muestra un toast en la parte inferior a la pantalla. El segundo botón suma un numero a un contador y este se muestra en el texto.
+
+
+https://github.com/user-attachments/assets/e842c17f-632a-4583-aacb-8408a85a4479
+
+
+  
+
 
 
   
