@@ -25,6 +25,10 @@
             android:exported="true">
         </activity>
         <activity
+            android:name=".HelloToast"
+            android:exported="true">
+        </activity>
+        <activity
             android:name=".DragAndDrop"
             android:exported="true"
             android:screenOrientation="sensorLandscape"/>

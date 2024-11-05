@@ -20,9 +20,10 @@
         android:name="com.example.ejercicios.SecondFragment"
         android:layout_width="330dp"
         android:layout_height="330dp"
-        app:layout_constraintStart_toEndOf="@id/fragmentContainerView1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/fragmentContainerView1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.493"
         app:layout_constraintWidth_percent="0.5" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -19,6 +19,7 @@ public class Menu extends AppCompatActivity {
         Button button2 = findViewById(R.id.button2);
         Button button3 = findViewById(R.id.button3);
         Button button4 = findViewById(R.id.button4);
+        Button button5 = findViewById(R.id.button5);
 
 
         // Acciones de los botones
@@ -52,6 +53,15 @@ public class Menu extends AppCompatActivity {
             public void onClick(View v) {
                 // Inicia la nueva actividad con un Intent
                 Intent intent = new Intent(Menu.this, Fragments.class);
+                startActivity(intent);
+            }
+        });
+
+        button5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Inicia la nueva actividad con un Intent
+                Intent intent = new Intent(Menu.this, HelloToast.class);
                 startActivity(intent);
             }
         });
