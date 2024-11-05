@@ -25,6 +25,15 @@ https://github.com/user-attachments/assets/ffc45460-8783-41c6-8ad4-abee48118404
 
 https://github.com/user-attachments/assets/e5b703c4-7458-4cbc-a7fa-87dc94806d1c
 
+ACTIVIDAD 5: HELLO TOAST (Relative)
+En la actividad 5, hello toast, he usado un RelativeLayout para poner dos botones y un texto. Al pulsar el primer botón se muestra un toast en la parte inferior a la pantalla. El segundo botón suma un numero a un contador y este se muestra en el texto.
+
+
+
+https://github.com/user-attachments/assets/8bc01150-3f99-4615-8bd1-b973fb8cbc50
+
+
+
 
 
   
