@@ -71,6 +71,14 @@
                 android:background="@android:drawable/bottom_bar"
                 android:text="Activitat 5" />
 
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:background="@android:drawable/bottom_bar"
+                android:text="Activitat 6" />
+
 
         </LinearLayout>
     </ScrollView>

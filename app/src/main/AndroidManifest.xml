@@ -29,6 +29,10 @@
             android:exported="true">
         </activity>
         <activity
+            android:name=".TextViewActivity"
+            android:exported="true">
+        </activity>
+        <activity
             android:name=".DragAndDrop"
             android:exported="true"
             android:screenOrientation="sensorLandscape"/>
