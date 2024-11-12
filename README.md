@@ -31,8 +31,17 @@ https://github.com/user-attachments/assets/e5b703c4-7458-4cbc-a7fa-87dc94806d1c
 
 https://github.com/user-attachments/assets/e842c17f-632a-4583-aacb-8408a85a4479
 
+## ACTIVIDAD 6: SCROLL TEXT
+  En esta actividad he usado un scroll para poder poner en la aplicación un texto que de normal no cabría en la pantalla. La aplicación también tiene un botón que abre un fragment con un formulario para añadir un comentario al texto.
 
   
+
+
+  
+
+
+https://github.com/user-attachments/assets/e6f39ebe-282f-4e37-87e3-5419fb93b3bc
+
 
 
 
