@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-
     <androidx.gridlayout.widget.GridLayout
         android:id="@+id/gridLayout"
         android:layout_width="376dp"
@@ -18,24 +17,33 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.97"
-        app:rowCount="5">
+        app:rowCount="6">
+
 
         <Button
             android:id="@+id/buttonMR"
+            style="@style/Widget.AppCompat.Button"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:text="MR"
             android:layout_margin="4dp"
+            android:background="@drawable/gradient_orange"
+            android:backgroundTint="@null"
+            android:stateListAnimator="@null"
+            android:text="MR"
+            android:textColor="@android:color/white"
             app:cornerRadius="5dp"
+            app:layout_column="0"
             app:layout_columnWeight="1"
+            app:layout_row="0"
             app:layout_rowWeight="1" />
 
         <Button
             android:id="@+id/buttonMPlus"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:text="M+"
             android:layout_margin="4dp"
+            android:text="MS"
+            android:background="@drawable/gradient_orange"
             app:cornerRadius="5dp"
             app:layout_columnWeight="1"
             app:layout_rowWeight="1" />
@@ -44,8 +52,9 @@
             android:id="@+id/buttonMMinus"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:text="M-"
             android:layout_margin="4dp"
+            android:text="MC"
+            android:background="@drawable/gradient_orange"
             app:cornerRadius="5dp"
             app:layout_columnWeight="1"
             app:layout_rowWeight="1" />
@@ -56,6 +65,7 @@
             android:layout_height="0dp"
             android:layout_margin="4dp"
             android:text="/"
+            android:background="@drawable/gradient_orange"
             app:cornerRadius="5dp"
             app:layout_columnWeight="1"
             app:layout_rowWeight="1" />
@@ -66,6 +76,7 @@
             android:layout_height="0dp"
             android:layout_margin="4dp"
             android:text="7"
+            android:background="@drawable/gradient_orange"
             app:cornerRadius="5dp"
             app:layout_columnWeight="1"
             app:layout_rowWeight="1" />
@@ -76,6 +87,7 @@
             android:layout_height="0dp"
             android:layout_margin="4dp"
             android:text="8"
+            android:background="@drawable/gradient_orange"
             app:cornerRadius="5dp"
             app:layout_columnWeight="1"
             app:layout_rowWeight="1" />
@@ -86,6 +98,7 @@
             android:layout_height="0dp"
             android:layout_margin="4dp"
             android:text="9"
+            android:background="@drawable/gradient_orange"
             app:cornerRadius="5dp"
             app:layout_columnWeight="1"
             app:layout_rowWeight="1" />
@@ -96,6 +109,7 @@
             android:layout_height="0dp"
             android:layout_margin="4dp"
             android:text="*"
+            android:background="@drawable/gradient_orange"
             app:cornerRadius="5dp"
             app:layout_columnWeight="1"
             app:layout_rowWeight="1" />
@@ -106,6 +120,7 @@
             android:layout_height="0dp"
             android:layout_margin="4dp"
             android:text="4"
+            android:background="@drawable/gradient_orange"
             app:cornerRadius="5dp"
             app:layout_columnWeight="1"
             app:layout_rowWeight="1" />
@@ -116,6 +131,7 @@
             android:layout_height="0dp"
             android:layout_margin="4dp"
             android:text="5"
+            android:background="@drawable/gradient_orange"
             app:cornerRadius="5dp"
             app:layout_columnWeight="1"
             app:layout_rowWeight="1" />
@@ -126,6 +142,7 @@
             android:layout_height="0dp"
             android:layout_margin="4dp"
             android:text="6"
+            android:background="@drawable/gradient_orange"
             app:cornerRadius="5dp"
             app:layout_columnWeight="1"
             app:layout_rowWeight="1" />
@@ -136,6 +153,7 @@
             android:layout_height="0dp"
             android:layout_margin="4dp"
             android:text="+"
+            android:background="@drawable/gradient_orange"
             app:cornerRadius="5dp"
             app:layout_columnWeight="1"
             app:layout_rowWeight="1" />
@@ -146,6 +164,7 @@
             android:layout_height="0dp"
             android:layout_margin="4dp"
             android:text="1"
+            android:background="@drawable/gradient_orange"
             app:cornerRadius="5dp"
             app:layout_columnWeight="1"
             app:layout_rowWeight="1" />
@@ -156,6 +175,7 @@
             android:layout_height="0dp"
             android:layout_margin="4dp"
             android:text="2"
+            android:background="@drawable/gradient_orange"
             app:cornerRadius="5dp"
             app:layout_columnWeight="1"
             app:layout_rowWeight="1" />
@@ -166,6 +186,7 @@
             android:layout_height="0dp"
             android:layout_margin="4dp"
             android:text="3"
+            android:background="@drawable/gradient_orange"
             app:cornerRadius="5dp"
             app:layout_columnWeight="1"
             app:layout_rowWeight="1" />
@@ -176,6 +197,7 @@
             android:layout_height="0dp"
             android:layout_margin="4dp"
             android:text="-"
+            android:background="@drawable/gradient_orange"
             app:cornerRadius="5dp"
             app:layout_columnWeight="1"
             app:layout_rowWeight="1" />
@@ -185,7 +207,8 @@
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_margin="4dp"
-            android:text="sup"
+            android:text="C"
+            android:background="@drawable/gradient_orange"
             app:cornerRadius="5dp"
             app:layout_columnWeight="1"
             app:layout_rowWeight="1" />
@@ -196,6 +219,7 @@
             android:layout_height="0dp"
             android:layout_margin="4dp"
             android:text="0"
+            android:background="@drawable/gradient_orange"
             app:cornerRadius="5dp"
             app:layout_columnWeight="1"
             app:layout_rowWeight="1" />
@@ -206,6 +230,7 @@
             android:layout_height="0dp"
             android:layout_margin="4dp"
             android:text="."
+            android:background="@drawable/gradient_orange"
             app:cornerRadius="5dp"
             app:layout_columnWeight="1"
             app:layout_rowWeight="1" />
@@ -216,12 +241,12 @@
             android:layout_height="0dp"
             android:layout_margin="4dp"
             android:text="="
+            android:background="@drawable/gradient_orange"
             app:cornerRadius="5dp"
             app:layout_columnWeight="1"
             app:layout_rowWeight="1" />
 
     </androidx.gridlayout.widget.GridLayout>
-
 
     <TextView
         android:id="@+id/textView7"
@@ -242,9 +267,12 @@
         android:layout_marginTop="1dp"
         android:layout_marginBottom="3dp"
         android:orientation="vertical"
+        android:background="@drawable/gradient_gray"
         app:layout_constraintBottom_toTopOf="@+id/textView8"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        android:paddingEnd="10dp"
+        android:gravity="center_vertical|end"
         app:layout_constraintTop_toBottomOf="@+id/textView7"></LinearLayout>
 
     <TextView
@@ -255,10 +283,10 @@
         android:layout_marginTop="3dp"
         android:layout_marginEnd="21dp"
         android:layout_marginBottom="1dp"
-        android:background="#BDBDBD"
+        android:background="@drawable/gradient_gray"
         android:paddingEnd="10dp"
-        android:text="TextView"
-        android:gravity="center_vertical|end"
+        android:text=""
+        android:gravity="end"
         app:layout_constraintBottom_toTopOf="@+id/gridLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

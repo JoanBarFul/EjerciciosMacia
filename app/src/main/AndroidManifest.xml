@@ -18,12 +18,16 @@
             android:name=".MainActivity"
             android:exported="true">
         </activity>
+        <activity android:name=".layoutMenu"
+            android:exported="true"/>
         <activity android:name=".Fragments"
             android:exported="true"/>
         <activity
             android:name=".Quiz"
             android:exported="true">
         </activity>
+        <activity android:name=".Overlap"
+            android:exported="true"/>
         <activity
             android:name=".HelloToast"
             android:exported="true">
@@ -34,6 +38,18 @@
         </activity>
         <activity
             android:name=".TextViewActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".RadioBox"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".BoxModel"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".SearchUrl"
             android:exported="true">
         </activity>
         <activity

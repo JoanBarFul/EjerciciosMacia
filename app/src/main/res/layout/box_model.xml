@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/weightMain"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+    <Button
+
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="50"
+        android:backgroundTint="#D89393"
+        android:text="Fifty Percent"
+        android:textColor="#000000"
+        app:cornerRadius="0dp" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="30"
+        android:backgroundTint="#DBBC9D"
+        android:text="Thirty Percent"
+        android:textColor="#000000"
+        app:cornerRadius="0dp" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="20"
+        android:backgroundTint="#DACC9F"
+        android:text="Twenty Percent"
+        android:textColor="#000000"
+        app:cornerRadius="0dp" />
+</LinearLayout>
