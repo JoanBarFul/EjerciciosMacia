@@ -34,13 +34,40 @@ https://github.com/user-attachments/assets/e842c17f-632a-4583-aacb-8408a85a4479
 ## ACTIVIDAD 6: SCROLL TEXT
   En esta actividad he usado un scroll para poder poner en la aplicación un texto que de normal no cabría en la pantalla. La aplicación también tiene un botón que abre un fragment con un formulario para añadir un comentario al texto.
 
-  
-
-
-  
-
-
 https://github.com/user-attachments/assets/e6f39ebe-282f-4e37-87e3-5419fb93b3bc
+
+## ACTIVIDAD 7: CALCULADORA
+  En la actividad 7 he hecho una calculadora funcional con botones de memoria. Con MS se guarda el numero, con MR se usa y con MC se borra el número de la memória. También tiene un historial para ver la operaciones hechas.
+
+https://github.com/user-attachments/assets/a73da447-0385-4935-abcd-c09dbdd47a65
+
+## ACTIVIDAD 8: LAYOUT MENU
+  Esta actividad consta de actividades diferentes gestionadas mediante un menu simple.
+
+  ### RADIO BOX
+  La primera actividad "RADIO BOX" tiene unos seleccionables con los que cambiar la posicion de estos.
+
+    https://github.com/user-attachments/assets/00a80cbc-64e2-4552-8d21-4df4e6ee7f6e
+  ### BOX MODEL
+  Esta actividad contiene tres botones que ocupan un espacio especificos usando la funcion "android:layout_weight".
+
+  https://github.com/user-attachments/assets/c91a19b7-fb29-4aa6-aa8f-21a9a496cd81
+
+  ### SEARCH URL
+  En esta actividad puedes poner una URL en el campo de escritura y puedes acceder a la web.
+
+  https://github.com/user-attachments/assets/7060f446-8bb7-4df1-9f41-39593943f910
+
+  ### OVERLAP
+  La actividad contiene dos botones, uno encima de otra.
+
+  https://github.com/user-attachments/assets/e684f6a4-5b94-433c-bb9a-322c4b34fd49
+
+
+
+
+
+
 
 
 
