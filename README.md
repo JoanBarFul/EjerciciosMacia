@@ -47,7 +47,7 @@ https://github.com/user-attachments/assets/a73da447-0385-4935-abcd-c09dbdd47a65
   ### RADIO BOX
   La primera actividad "RADIO BOX" tiene unos seleccionables con los que cambiar la posicion de estos.
 
-    https://github.com/user-attachments/assets/00a80cbc-64e2-4552-8d21-4df4e6ee7f6e
+  https://github.com/user-attachments/assets/00a80cbc-64e2-4552-8d21-4df4e6ee7f6e
   ### BOX MODEL
   Esta actividad contiene tres botones que ocupan un espacio especificos usando la funcion "android:layout_weight".
 
